@@ -3,7 +3,11 @@ BSTlex.java - a simple implentation of a binary search tree (note: it is NOT hei
 OddWords.java - using a provided text file tests the implementation of the BSTlex class <br /> 
 TestBSTlex.java - JUnit tests for the functionality of the BSTlex class <br /> 
 
-OddWords takes in a text file and tokenises each line splitting on non alpha-numeric characters, for each produced token it then checks if the token exists in the BST or not. <br /> 
+To run the program after compilation: <br /> 
+java OddWords textfile.txt <br /> 
+where textfile.txt is the name of the textfile to be used to demonstrate maintaining a binary search tree (BST) of words (word in this context means a contiguous sequence of alpha-numeric characters)<br /> 
+
+OddWords takes in a text file and tokenises each line splitting on non alpha-numeric characters, for each produced token it then checks if the token exists in the BST or not: <br /> 
 If the token does not exist in the BST it is inserted into it, the search path is printed ending with the token being inserted plus "INSERTED" <br /> 
 If the token does exist in the BST it is deleted from it, the search path is printed ending with the token being deleted plus "DELETED" <br /> 
 After the full file has been processed, an in-order traversal of the BST is printed along with the height of the BST (height is the longest path from root to a leaf)
